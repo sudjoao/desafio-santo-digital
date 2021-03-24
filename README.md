@@ -24,6 +24,9 @@ docker build --tag project  .
 docker run --publish 5000:5000 project
 ```
 
+* O link da api a ser utilizada após subir o projeto é:
+` http://0.0.0.0:5000/ `
+
 <br>
 <br>
 
