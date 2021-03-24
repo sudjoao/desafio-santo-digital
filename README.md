@@ -28,6 +28,13 @@ docker run --publish 5000:5000 project
 <br>
 
 #  Rotas
+## GET /
+#### Parameters
+-
+### Reponse
+| Name | Type | Description |
+|:----:|:----:|:-----------:|
+| message | ```string```  | Mensagem Hello World para saber que o server está up|
 
 ## POST /invoice
 
@@ -47,3 +54,10 @@ docker run --publish 5000:5000 project
     "textAnnotations": "...",
 }
 ```
+
+### Reponse
+| Name | Type | Description |
+|:----:|:----:|:-----------:|
+| invoice_number | ```string```  | Número da Nota Fiscal |
+| value | ```string```  | Valor total da nota fiscal |
+| verification_code | ```string```  | Código de verificação da nota fiscal |
