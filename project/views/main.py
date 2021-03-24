@@ -12,7 +12,6 @@ def post_invoice():
     invoice_controller = InvoiceController()
     try:
         items = body["fullTextAnnotation"]["text"].split('\n')
-        print(items)
         invoice_info = invoice_controller.get_invoice_data(items)
     except KeyError:
         return jsonify(
