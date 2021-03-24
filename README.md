@@ -8,27 +8,22 @@ As imagens utilizadas para a API foram DANFE (Documento Auxiliar da NF-e), exist
 ## Rodar localmente
 ### Instalações
 
-#### 1. [Python](https://www.python.org/downloads/)
+#### 1. [Docker](https://www.docker.com/products/docker-desktop)
 
 ### Execução
 ##### 1. Entrar na pasta raiz
 ```
 cd Desafio/
 ```
-#### 2. Configurar o ambiente
+#### 2. Buildar o docker
 ```
-python3 -m venv venv
-. venv/bin/activate
-pip install Flask
+docker build --tag project  .
 ```
-#### 3. Exportar variavél de ambiente
+#### 3. Rodar o servidor
 ```
-export FLASK_APP=project/views/main.py
+docker run --publish 5000:5000 project
 ```
-#### 4. Rodar o servidor
-```
-flask run
-```
+
 <br>
 <br>
 
